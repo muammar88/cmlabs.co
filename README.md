@@ -261,7 +261,22 @@ nautilus results/
 
 Dokumentasi API lengkap dapat diakses melalui Swagger UI setelah aplikasi berjalan:
 
-**URL**: `http://localhost:3033/api-docs`
+### Akses Swagger Documentation
+
+Anda memiliki dua cara untuk mengakses dokumentasi API Swagger:
+
+1. **Swagger UI - Route Lengkap**
+
+   ```
+   http://localhost:3033/api-docs
+   ```
+
+2. **Swagger UI - Route Shortcut**
+   ```
+   http://localhost:3033/docs
+   ```
+
+Kedua URL di atas akan menampilkan dokumentasi API interaktif yang sama. Anda dapat mencoba endpoint langsung dari Swagger UI.
 
 ### Endpoint Utama
 
