@@ -1,0 +1,25 @@
+# node_modules
+node_modules/
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# env file (PENTING)
+.env
+
+# build
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+
+# coverage
+coverage/
