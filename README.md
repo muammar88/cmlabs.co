@@ -263,20 +263,13 @@ Dokumentasi API lengkap dapat diakses melalui Swagger UI setelah aplikasi berjal
 
 ### Akses Swagger Documentation
 
-Anda memiliki dua cara untuk mengakses dokumentasi API Swagger:
+Buka browser dan akses Swagger UI di:
 
-1. **Swagger UI - Route Lengkap**
+```
+http://localhost:3033/docs
+```
 
-   ```
-   http://localhost:3033/api-docs
-   ```
-
-2. **Swagger UI - Route Shortcut**
-   ```
-   http://localhost:3033/docs
-   ```
-
-Kedua URL di atas akan menampilkan dokumentasi API interaktif yang sama. Anda dapat mencoba endpoint langsung dari Swagger UI.
+Di halaman ini Anda dapat melihat semua endpoint API yang tersedia dan mencoba endpoint langsung dari Swagger UI.
 
 ### Endpoint Utama
 
