@@ -10,6 +10,7 @@ Aplikasi web crawler yang dibangun dengan **Express.js**, **Puppeteer**, dan **S
 - [Instalasi](#instalasi)
 - [Konfigurasi](#konfigurasi)
 - [Menjalankan Aplikasi](#menjalankan-aplikasi)
+- [Melihat Hasil Crawling](#-melihat-hasil-crawling)
 - [Dokumentasi API](#dokumentasi-api)
 - [Struktur Folder](#struktur-folder)
 - [Teknologi yang Digunakan](#teknologi-yang-digunakan)
@@ -199,7 +200,64 @@ npm test
 
 ---
 
-## 📚 Dokumentasi API
+## �️ Melihat Hasil Crawling
+
+Setelah menjalankan proses crawling, Anda dapat melihat hasil-hasil yang telah di-crawl dengan cara:
+
+### 1. Akses Hasil Crawling via Browser
+
+Hasil crawling dapat diakses langsung melalui browser di folder `results/`:
+
+```
+http://localhost:3033/index.html
+```
+
+Semua file HTML dan aset yang berhasil di-crawl akan disimpan dan dapat diakses melalui URL di atas.
+
+### 2. Folder Hasil Crawling
+
+**Struktur folder `results/`:**
+
+- Menyimpan semua file HTML dan aset yang di-crawl (CSS, JavaScript, gambar, dll)
+- Setiap crawl akan membuat struktur folder sesuai dengan structure website original
+
+**Contoh akses file:**
+
+```
+http://localhost:3033/assets/styles/main.css
+http://localhost:3033/blog/article-title/index.html
+http://localhost:3033/avatar/user-profile.png
+```
+
+### 3. Folder Referensi Crawling (html/)
+
+Folder `html/` menyimpan contoh-contoh website yang sudah pernah di-crawl sebelumnya:
+
+- **`html/www.cmlabs.co/`** - Hasil crawl dari website cmlabs.co
+- **`html/www.sequence.day/`** - Hasil crawl dari website sequence.day
+
+Folder ini berfungsi sebagai referensi dan dokumentasi hasil crawling sebelumnya. Anda dapat membandingkan struktur folder dengan folder `results/` untuk memahami bagaimana output crawling diorganisir.
+
+### 4. Mengakses Folder Results
+
+Untuk melihat struktur lengkap hasil crawling:
+
+```bash
+# Pada Windows
+explorer results/
+
+# Pada macOS
+open results/
+
+# Pada Linux
+nautilus results/
+```
+
+**Catatan:** Folder `results/` akan secara otomatis dibuat oleh aplikasi ketika proses crawling pertama kali dijalankan.
+
+---
+
+## �📚 Dokumentasi API
 
 Dokumentasi API lengkap dapat diakses melalui Swagger UI setelah aplikasi berjalan:
 
